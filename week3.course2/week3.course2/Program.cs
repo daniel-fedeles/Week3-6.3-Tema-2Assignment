@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace week3.course2
 {
@@ -11,28 +10,6 @@ namespace week3.course2
             //            AtmMenu();
             //            AddTwoNumbersInAFile();
 
-            string s = "Ana are mere mere. Ana are pere";
-            char[] y = new[] { ' ', ',' };
-            string[] x = s.Split(y, StringSplitOptions.RemoveEmptyEntries);
-
-            Dictionary<string, int> dict = new Dictionary<string, int>();
-
-            foreach (var word in x)
-            {
-                if (dict.ContainsKey(word))
-                {
-                    dict[word]++;
-                }
-                else
-                {
-                    dict.Add(word, 1);
-                }
-            }
-
-            foreach (var i in dict)
-            {
-                Console.WriteLine($"Cheia {i.Key} si valoarea {i.Value}");
-            }
         }
 
         static void LeapYearOrNot(int year)
